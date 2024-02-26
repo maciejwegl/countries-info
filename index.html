@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries Info</title>
+    <link rel="stylesheet" href="App.css" />
+  </head>
+  <body>
+    <header id="main-header">
+      <nav>
+        <h1>Countries Info</h1>
+        <div class="filters">
+          <input
+            type="text"
+            placeholder="Country name"
+            id="input-filter"
+            value=""
+          />
+          <label for="country-select"
+            >Select region
+            <select name="region-select" id="region-select">
+              <option value="">All</option>
+              <option value="Europe">Europe</option>
+              <option value="Asia">Asia</option>
+              <option value="Americas">Americas</option>
+              <option value="Africa">Africa</option>
+              <option value="Oceania">Oceania</option>
+            </select>
+          </label>
+        </div>
+      </nav>
+    </header>
+    <div id="countries"></div>
+    <script type="module" src="./filter.js"></script>
+    <script type="module" src="./App.js"></script>
+  </body>
+</html>
